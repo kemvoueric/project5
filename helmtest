@@ -1,0 +1,8 @@
+#!/bin/bash
+
+for i in  ~/kubeadm-ansible/roles/helm-charts/files/charts/*
+do
+#cd ~/kubeadm-ansible/roles/helm-charts/files/charts/*
+helm install --name $i  . -n testing 
+#cd  ~/kubeadm-ansible
+done
